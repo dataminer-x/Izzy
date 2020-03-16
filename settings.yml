@@ -15,8 +15,8 @@ default_trigger: "snowboy"
 # - snowboy
 triggers:
   - snowboy:
-      pmdl_file: "trigger/kalliope-EN-12samples.pmdl"
-
+      #pmdl_file: "trigger/kalliope-EN-12samples.pmdl"
+       pmdl_file: "trigger/Izzy.pmdl" 
 
 # ---------------------------
 # Speech to text

@@ -3,14 +3,16 @@
   - name: "say-local-date"
     signals:
       - order: "what time is it"
+      - order: "what's the time"
     neurons:
       - systemdate:
           say_template:
-            - "it's {{ hours }} and {{ minutes }} minute"
+            - "it's {{ hours }} {{ minutes }}"
 
   - name: "say-local-date-from-template"
     signals:
-      - order: "which date are we"
+      - order: "what's the date"
+      - order: "what's today's date"
     neurons:
       - systemdate:
           file_template: "templates/systemdate_template.j2"

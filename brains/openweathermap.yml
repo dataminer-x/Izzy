@@ -1,0 +1,49 @@
+#Get the current weather
+#```yaml
+--- 
+#```
+
+#Load the location from your order
+#```yaml
+  - name: "get-the-weather-2"
+    signals:
+      - order: "what is the weather"
+      - order: "what's the weather"  
+    neurons:
+      - openweathermap:
+          api_key: "9940c618eb6cabcda213dba9f27aabbf"
+          lang: "en"
+          temp_unit: "fahrenheit"
+          location: "{{ location }}"
+          say_template:
+          - "Today at {{ location }}, the weather is {{ current['weather_status'] }} with a temperature of{{ current['temperature'] }} degrees"
+          
+#```
+
+#Forecast example for monday
+#```yaml
+ #- name: "weather-forecast-daily"
+   #signals:
+     #- order: "How is the weather on Monday morning"
+   #neurons:
+     #- openweathermap:
+         #api_key: "9940c618eb6cabcda213dba9f27aabbf"
+         #lang: "en"
+         #location: "frederick county"
+         #say_template: "The weather on Monday morning will be {{ monday['07:00']['weather_status'] }} with temperatures from  {{ monday['07:00']['temperature'] }}  to  {{ monday['16:00']['temperature'] }} degree at afternoon"
+#```
+
+#Forecast example for today at a given location
+##```yaml
+  #- name: "weather-forecast-daily"
+    #signals:
+      #- order: "what is the weather today"
+    #neurons:
+      #- openweathermap:
+          #api_key: "9940c618eb6cabcda213dba9f27aabbf"
+          #lang: "en"
+          #temp_unit: "fahrenheit"
+          #location : "frederick county"
+          #country: "US"
+          #say_template: "The weather today starts today with {{ today['07:00']['weather_status'] }} and {{ today['10:00']['weather_status'] }} at noon for the evening you can expect {{ today['19:00']['weather_status'] }}"
+##```
