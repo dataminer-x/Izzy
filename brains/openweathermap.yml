@@ -11,8 +11,8 @@
       - order: "what's the weather"  
     neurons:
       - openweathermap:
-          api_key: "9940c618eb6cabcda213dba9f27aabbf"
-          lang: "en"
+          api_key: "{{ wmapAPI }}"
+          lang: "{{ lang }}"
           temp_unit: "fahrenheit"
           location: "{{ location }}"
           say_template:

@@ -1,3 +1,5 @@
 
 \.idea/
 Supprimerait .gitignore
+
+/global_variables/variables.yml

@@ -8,6 +8,7 @@
         - brains/openweathermap.yml
         - brains/wikipedia-searcher.yml 
         - brains/simple-sleep.yml
+        - brains/movies.yml
 
   - name: "order-not-found-synapse"
     signals: []

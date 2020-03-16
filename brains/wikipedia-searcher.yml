@@ -5,7 +5,7 @@
       - order: "search Wikipedia {{ query }}"
     neurons:
       - wikipedia_searcher:
-          language: "en"
+          language: "{{ lang }}"
           sentences: 2
           query: " {{query}}"
           file_template: "templates/wikipedia_search.j2"

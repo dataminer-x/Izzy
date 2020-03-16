@@ -1,0 +1,15 @@
+{% if tv is defined %}
+
+{{ tv["name"] }}, is a TV Show of {{ tv["number_of_episodes"] }} on {{ tv["number_of_seasons"] }} seasons.
+
+{{ tv["name"] }} is a TV Show of {{ tv["genres"]|map(attribute='name')|join(', ') }}
+
+Synopsis :
+{{ tv["overview"] }}
+    {% if tv['credits'] is defined %}
+        {% set actors = tv['credits']['cast'] %}
+        Main actors are: {{ actors[:5]|map(attribute='name')|join(', ') }}
+    {% endif %}
+{% else %}
+    No TV Show found
+{% endif %} 
