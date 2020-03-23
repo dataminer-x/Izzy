@@ -1,4 +1,4 @@
-- name: "gkeep-add"
+  - name: "gkeep-add"
     signals:
       - order: "Add to {{ list }} the following {{ items }}"
     neurons:
