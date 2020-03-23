@@ -57,10 +57,10 @@
           file_template: templates/movie_db_upcoming.j2
           
   - name: "now-playing-movie"
-     signals:
-       - order: "what movies are playing now"
-     neurons:
-       - movie_db:
+    signals:
+      - order: "what movies are playing now"
+    neurons:
+      - movie_db:
            api_key: "{{ IMDBAPI }}"
            action: "NOW_PLAYING"
            language: "{{ lang }}"
