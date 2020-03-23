@@ -1,0 +1,17 @@
+{% if ItemsAdded %} 
+    {{ ItemsAdded }} was added to your {{ List }}.
+{% elif ListDeleted %} 
+    {{ ListDeleted }} was deleted.
+{% elif ItemsChecked %} 
+    {{ ItemsChecked }} was checked on {{ List }}.
+{% elif ItemsUnchecked %} 
+    {{ ItemsUnchecked }} was unchecked on {{ List }}.
+{% elif ItemsDeleted %} 
+    {{ ItemsDeleted }} was deleted from {{ List }}.
+{% elif AllLists %} 
+    You got the following lists {{ AllList }}
+{% elif ItemsInList %} 
+    Your lists {{ List }} contains the following items {{ ItemsInList }} 
+{% elif ListNotFound %} 
+    I could not find list {{ ListNotFound }}.
+{% endif %}

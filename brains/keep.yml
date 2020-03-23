@@ -1,0 +1,85 @@
+- name: "gkeep-add"
+    signals:
+      - order: "Add to {{ list }} the following {{ items }}"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"
+          list: "{{ list }}"
+          items: "{{ items }}"
+          option: "add"
+          split_word: "and"
+          pin_list: True
+          file_template: "templates/gkeep.j2"
+          
+
+  - name: "gkeep-delete-list"
+    signals:
+      - order: "delete list {{ list }}"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"
+          list: "{{ list }}"
+          option: "delete_list"
+          file_template: "templates/gkeep.j2"
+
+  - name: "gkeep-delete-list-item"
+    signals:
+      - order: "delete from {{ list }} following items {{ items }}"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"
+          list: "{{ list }}"
+          items: "{{ items }}"
+          option: "delete_list_item"
+          split_word: "and"
+          file_template: "templates/gkeep.j2"
+
+  - name: "gkeep-check-item"
+    signals:
+      - order: "check following {{ items }} in {{ list }}"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"
+          list: "{{ list }}"
+          items: "{{ items }}"      
+          option: "check_item"
+          split_word: "and"
+          file_template: "templates/gkeep.j2"
+
+  - name: "gkeep-uncheck-item"
+    signals:
+      - order: "uncheck following {{ items }} in {{ list }}"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"
+          list: "{{ list }}"
+          items: "{{ items }}"      
+          option: "uncheck_item"
+          split_word: "and"
+          file_template: "templates/gkeep.j2"
+  
+  - name: "gkeep-get-all-list"
+    signals:
+      - order: "read all lists"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"     
+          option: "get_all_lists"
+          file_template: "templates/gkeep.j2"
+
+  - name: "gkeep-get-list-items"
+    signals:
+      - order: "tell me what is on {{ list }}"
+    neurons:
+      - gkeep:
+          login: "{{ email }}"
+          password: "{{ gpwd }}"
+          list: "{{ list }}"   
+          option: "get_list_items"
+          file_template: "templates/gkeep.j2"
