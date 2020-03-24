@@ -1,5 +1,5 @@
 --- 
- - name: "news-World"
+  - name: "news-World"
     signals:
       - order: "Get world news"
     neurons:
