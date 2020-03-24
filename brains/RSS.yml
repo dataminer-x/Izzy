@@ -12,6 +12,6 @@
       - order: "Get financial news"
     neurons:
       - rss_reader:
-          feed_url: "https://www.moneytalksnews.com/feed/"
+          feed_url: "http://www.cnbc.com/id/19746125/device/rss/rss.xml"
           file_template: templates/en_rss.j2
           
