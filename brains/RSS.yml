@@ -1,0 +1,16 @@
+  - name: "news-World"
+    signals:
+      - order: "Get world news"
+    neurons:
+      - rss_reader:
+          feed_url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+          file_template: templates/en_rss.j2
+ 
+   - name: "news-Financial"
+    signals:
+      - order: "Get financial news"
+    neurons:
+      - rss_reader:
+          feed_url: "https://www.moneytalksnews.com/feed/"
+          file_template: templates/en_rss.j2
+          
