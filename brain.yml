@@ -9,7 +9,7 @@
         - brains/wikipedia-searcher.yml 
         - brains/simple-sleep.yml
         - brains/movies.yml
- #       - brains/keep.yml
+        - brains/keep.yml
 
   - name: "order-not-found-synapse"
     signals: []
