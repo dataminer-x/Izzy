@@ -5,6 +5,7 @@
     neurons:
       - rss_reader:
           feed_url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+          max_items: 12
           file_template: templates/en_rss.j2
  
   - name: "news-Financial"
@@ -12,6 +13,7 @@
       - order: "Get financial news"
     neurons:
       - rss_reader:
-          feed_url: "http://www.cnbc.com/id/19746125/device/rss/rss.xml"
+          feed_url: "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
+          max_items: 10
           file_template: templates/en_rss.j2
           
