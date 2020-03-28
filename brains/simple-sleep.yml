@@ -4,7 +4,7 @@
       - order: "Wait for me "
     neurons:
       - say:
-           message: "I'll wait for 1 minute"
+          message: "I'll wait for 1 minute"
       - sleep:
           minutes: 1
 
@@ -13,19 +13,19 @@
       - order: "I have a short meeting"
     neurons:
       - say:
-           message: "I'll be back in 30"
+          message: "I'll be back in 30"
       - sleep:
            minutes: 30
       - say:
-           message: "I'm back online"
+          message: "I'm back online"
 
   - name: "run-meeting"
     signals:
       - order: "I have a meeting"
     neurons:
       - say:
-           message: "I'll be back in one hour"
+          message: "I'll be back in one hour"
       - sleep:
-           minutes: 60
+          minutes: 60
       - say:
-           message: "I'm back online"
+          message: "I'm back online"
