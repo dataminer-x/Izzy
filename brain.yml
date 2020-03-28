@@ -10,6 +10,7 @@
         - brains/simple-sleep.yml
         - brains/movies.yml
         - brains/keep.yml
+        - brains/RSS.yml
 
   - name: "order-not-found-synapse"
     signals: []
