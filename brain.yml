@@ -11,6 +11,7 @@
         - brains/movies.yml
         - brains/keep.yml
         - brains/RSS.yml
+        - brains/timer.yml
 
   - name: "order-not-found-synapse"
     signals: []
