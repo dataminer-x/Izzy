@@ -65,7 +65,9 @@
   
   - name: "gkeep-get-all-list"
     signals:
-      - order: "read all lists"
+      - order:
+         - "read all list"
+         - "read all lists"
     neurons:
       - gkeep:
           login: "{{ email }}"
