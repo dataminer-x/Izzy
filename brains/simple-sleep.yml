@@ -6,16 +6,18 @@
       - say:
           message: "I'll wait for 1 minute"
       - sleep:
-          minutes: 1
+          seconds: 60
+      - say:
+          message: "I'm back online"
 
   - name: "run-short-meeting"
     signals:
       - order: "I have a short meeting"
     neurons:
       - say:
-          message: "I'll be back in 30"
+          message: "I'll be back in thirty"
       - sleep:
-           minutes: 30
+           seconds: 1800
       - say:
           message: "I'm back online"
 
@@ -26,6 +28,6 @@
       - say:
           message: "I'll be back in one hour"
       - sleep:
-          minutes: 60
+          seconds: 3600
       - say:
           message: "I'm back online"
