@@ -1,6 +1,6 @@
   - name: "timer2"
     signals:
-      - order: "set timer for{{ time }} minutes"
+      - order: "set timer {{ time }} minutes"
     neurons:
       - neurotimer:
           minutes: "{{ time }}"
