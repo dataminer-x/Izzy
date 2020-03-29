@@ -1,6 +1,6 @@
   - name: "gkeep-add"
     signals:
-      - order: "Add to list {{ list }} {{ items }}"
+      - order: "Add to list {{ list }} items {{ items }}"
     neurons:
       - gkeep:
           login: "{{ email }}"
