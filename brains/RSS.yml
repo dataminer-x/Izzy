@@ -16,4 +16,12 @@
           feed_url: "https://feeds.a.dj.com/rss/RSSMarketsMain.xml"
           max_items: 10
           file_template: templates/en_rss.j2
-          
+
+  - name: "news-US"
+    signals:
+      - order: "Get news"
+    neurons:
+      - rss_reader:
+          feed_url: "https://apnews.com/apf-usnews"
+          max_items: 10
+          file_template: templates/en_rss.j2
