@@ -3,4 +3,4 @@
       - order: "tell me {{ query }}"
     neurons:
       - uri:
-          url: "http://api.wolframalpha.com/v1/result?appid={{ alphaAPI }}&1={{ query }}"
+          url: "http://api.wolframalpha.com/v1/result?appid={{ alphaAPI }}&i={{ query }}"
