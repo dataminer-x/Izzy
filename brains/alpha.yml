@@ -4,4 +4,3 @@
     neurons:
       - uri:
          url: "http://api.wolframalpha.com/v1/result?appid={{ "alphaAPI" }}&1={{ "query" }}"
-         say_template:
