@@ -25,7 +25,11 @@
 
   - name: "run-meeting"
     signals:
-      - order: "I have a meeting"
+      - order:
+          text: "I have a meeting"
+          matching-type: "not-contain"
+          excluded words:
+            - "short"
     neurons:
       - say:
           message: "I'll be back in one hour"
