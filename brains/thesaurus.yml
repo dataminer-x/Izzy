@@ -7,4 +7,4 @@
         - thesaurus:
             word: "{{ word }}"
         - say:
-            - "Another word for {{ word }} is {{ Synonyms }}
+            - "Another word for {{ word }} is {{ Synonyms }}"
