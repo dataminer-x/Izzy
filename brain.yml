@@ -13,6 +13,7 @@
         - brains/RSS.yml
         - brains/timer.yml
         - brains/alpha.yml
+        - brains/thesaurus.yml
 
   - name: "order-not-found-synapse"
     signals: []

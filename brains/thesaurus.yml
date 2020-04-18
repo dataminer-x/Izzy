@@ -1,0 +1,10 @@
+---
+  - name: "thesaurus"
+    signals:
+        - order: "what's another word for {{ word }}"
+        - api_key: "{{ api_key }}"
+    neurons:
+        - thesaurus:
+            word: "{{ word }}"
+        - say:
+            - "Another word for {{ word }} is {{ Synonyms }}
