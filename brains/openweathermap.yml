@@ -22,7 +22,7 @@
 #Forecast for tomorrow
   - name: "weather-forecast-daily"
     signals:
-      - order: "what's {{ day_of_week }} forecast"
+      - order: "what's the forecast {{ day_of_week }}"
       - order: "what's the forecast for {{ day_of_week }}"
     neurons:
       - openweathermap:
