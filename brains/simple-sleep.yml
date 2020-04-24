@@ -27,9 +27,9 @@
     signals:
       - order:
           text: "I have a meeting"
-          matching-type: "not-contain"
-          excluded words:
-            - "short"
+          matching-type: "strict"
+#          excluded words:
+#            - "short"
     neurons:
       - say:
           message: "I'll be back in one hour"
