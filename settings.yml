@@ -57,7 +57,7 @@ text_to_speech:
       language: "en-GB"
       cache: True
   - googletts:
-      language: "en-IN"
+      language: "en-AU"
       cache: True
   - voicerss:
       language: "en-gb"
