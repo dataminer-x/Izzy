@@ -1,6 +1,6 @@
   - name: "weather-query"
     signals:
-      - order: "what's the weather?"
+      - order: "what's the weather"
     neurons:
       - uri:
           url: "https://api.openweathermap.org/data/2.5/onecall?lat={{ lat }}&lon={{ lon }}&units=imperial&appid={{ wmapAPI }}"
