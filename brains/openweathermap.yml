@@ -20,13 +20,13 @@
 
 
 #Forecast for tomorrow
- - name: "weather-forecast-daily"
-   signals:
-     - order: "what's {{ day_of_week }} forecast"
-     - order: "what's the forecast for {{ day_of_week }}"
-   neurons:
-     - openweathermap:
-         api_key: "{{ wmapAPI }}"
-         lang: "{{ lang }}"
-         location: "{{ location }}"
-         file_template: "openweathermap.j2"
+  - name: "weather-forecast-daily"
+    signals:
+      - order: "what's {{ day_of_week }} forecast"
+      - order: "what's the forecast for {{ day_of_week }}"
+    neurons:
+      - openweathermap:
+          api_key: "{{ wmapAPI }}"
+          lang: "{{ lang }}"
+          location: "{{ location }}"
+          file_template: "openweathermap.j2"
