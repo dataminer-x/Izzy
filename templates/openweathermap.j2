@@ -12,57 +12,57 @@
 -%}
 
 {% if "today" == day_of_week  %} 
-    The weather today in the morning will be {{ today['07:00']['weather_status'] }} with temperatures from about {{ today['07:00']['temperature'] }} to {{ today['16:00']['temperature'] }} degree at afternoon
+    This morning's weather will be {{ today['07:00']['weather_status'] }} with temperatures from about {{ today['07:00']['temperature'] }} to {{ today['16:00']['temperature'] }} degree this afternoon
 
 {% elif "tomorrow" == day_of_week  %} 
-    The weather tomorrow will be {{ tomorrow['07:00']['weather_status'] }} with temperatures from about {{ tomorrow['07:00']['temperature'] }} to {{ tomorrow['16:00']['temperature'] }} degree at afternoon
+    Tomorrow morning's weather will be {{ tomorrow['07:00']['weather_status'] }} with temperatures from about {{ tomorrow['07:00']['temperature'] }} to {{ tomorrow['16:00']['temperature'] }} degree in the afternoon
 
     
 {% elif "monday" == day_of_week  %}
     {% if monday['weather_status'] %}
-        The weather on Monday will be {{ monday['07:00']['weather_status'] }} with temperatures from about {{ monday['07:00']['temperature'] }} to {{ monday['16:00']['temperature'] }} degree at afternoon
+        The weather on Monday will be {{ monday['07:00']['weather_status'] }} with temperatures from about {{ monday['07:00']['temperature'] }} to {{ monday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for monday
     {% endif %}
     
 {% elif "tuesday" == day_of_week  %}
     {% if tuesday['weather_status'] %} 
-        The weather on Tuesday will be {{ tuesday['07:00']['weather_status'] }} with temperatures from about {{ tuesday['07:00']['temperature'] }} to {{ tuesday['16:00']['temperature'] }} degree at afternoon
+        The weather on Tuesday will be {{ tuesday['07:00']['weather_status'] }} with temperatures from about {{ tuesday['07:00']['temperature'] }} to {{ tuesday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for tuesday
     {% endif %}
     
 {% elif "wednesday" == day_of_week  %}
     {% if wednesday['weather_status'] %}
-        The weather on Wednesday will be {{ wednesday['07:00']['weather_status'] }} with temperatures from about {{ wednesday['07:00']['temperature'] }} to {{ wednesday['16:00']['temperature'] }} degree at afternoon
+        The weather on Wednesday will be {{ wednesday['07:00']['weather_status'] }} with temperatures from about {{ wednesday['07:00']['temperature'] }} to {{ wednesday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for wednesday
     {% endif %}
     
 {% elif "thursday" == day_of_week %}
     {% if thursday['weather_status'] %}
-        The weather on Thursday will be {{ thursday['07:00']['weather_status'] }} with temperatures from about {{ thursday['07:00']['temperature'] }} to {{ thursday['16:00']['temperature'] }} degree at afternoon
+        The weather on Thursday will be {{ thursday['07:00']['weather_status'] }} with temperatures from about {{ thursday['07:00']['temperature'] }} to {{ thursday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for thursday
     {% endif %}
     
 {% elif "friday" == day_of_week  %}
     {% if friday['weather_status'] %}
-        The weather on Friday will be {{ friday['07:00']['weather_status'] }} with temperatures from about {{ friday['07:00']['temperature'] }} to {{ friday['16:00']['temperature'] }} degree at afternoon
+        The weather on Friday will be {{ friday['07:00']['weather_status'] }} with temperatures from about {{ friday['07:00']['temperature'] }} to {{ friday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for friday
     {% endif %}
     
 {% elif "saturday" == day_of_week  %}
     {% if saturday['weather_status'] %}
-        The weather on Saturday will be {{ saturday['07:00']['weather_status'] }} with temperatures from about {{ saturday['07:00']['temperature'] }} to {{ saturday['16:00']['temperature'] }} degree at afternoon
+        The weather on Saturday will be {{ saturday['07:00']['weather_status'] }} with temperatures from about {{ saturday['07:00']['temperature'] }} to {{ saturday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for saturday
     {% endif %}
     
 {% elif "sunday" == day_of_week  %}
     {% if sunday['weather_status'] %} 
-        The weather on Sunday will be {{ sunday['07:00']['weather_status'] }} with temperatures from about {{ sunday['07:00']['temperature'] }} to {{ sunday['16:00']['temperature'] }} degree at afternoon
+        The weather on Sunday will be {{ sunday['07:00']['weather_status'] }} with temperatures from about {{ sunday['07:00']['temperature'] }} to {{ sunday['16:00']['temperature'] }} degree in the afternoon
     {% else %} 
         I'm sorry, there is no forecast for sunday
     {% endif %}
