@@ -4,5 +4,8 @@
     neurons:
       - uri:
           url: "https://api.openweathermap.org/data/2.5/onecall?lat={{ lat }}&lon={{ lon }}&units=imperial&appid={{ wmapAPI }}"
+          method: POST
+          headers:
+            Content-Type: 'application/json'
           say_template:
-            - "The current temperature is {{ temp }} and the current condition is {{ description }}"
+            - "The current temperature is {{ current.temp }} and the current condition is {{ current.weather.description }}"
