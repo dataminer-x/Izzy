@@ -5,7 +5,7 @@
       - uri:
           url: "https://api.openweathermap.org/data/2.5/onecall?lat={{ lat }}&lon={{ lon }}&units=imperial&appid={{ wmapAPI }}"
           say_template:
-            - "The current temperature is {{ \"current\":\"temp\" }} and the current condition is {{ current.weather.description }}"
+            - "The current temperature is {{ \"current\".\"temp\" }} and the current condition is {{ current.weather.description }}"
 
 
 #            https://api.openweathermap.org/data/2.5/onecall?lat=39.47&lon=-77.4&units=imperial&appid=9940c618eb6cabcda213dba9f27aabbf
