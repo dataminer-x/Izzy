@@ -5,7 +5,7 @@
         - brains/systemdate.yml
         - brains/neurotransmitter.yml
         - brains/uri.yml
-        - brains/openweathermap.yml
+        - brains/openweather.yml
         - brains/wikipedia-searcher.yml 
         - brains/simple-sleep.yml
         - brains/movies.yml
