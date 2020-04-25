@@ -8,7 +8,8 @@
   - name: "get-the-weather-2"
     signals:
       - order: "what is the weather"
-      - order: "what's the weather"  
+      - order: "what's the weather"
+      matching-type: "strict"
     neurons:
       - openweathermap:
           api_key: "{{ wmapAPI }}"
