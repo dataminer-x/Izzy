@@ -9,7 +9,7 @@
     signals:
       - order: "what is the weather"
       - order: "what's the weather"
-      matching-type: "strict"
+        matching-type: "strict"
     neurons:
       - openweathermap:
           api_key: "{{ wmapAPI }}"
