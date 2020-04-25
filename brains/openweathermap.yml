@@ -5,26 +5,28 @@
 
 #Load the location from your order
 #```yaml
-  - name: "get-the-weather-2"
-    signals:
-      - order: "what is the weather"
-      - order: "what's the weather"
-        matching-type: "strict"
-    neurons:
-      - openweathermap:
-          api_key: "{{ wmapAPI }}"
-          lang: "{{ lang }}"
-          temp_unit: "fahrenheit"
-          location: "{{ location }}"
-          say_template:
-          - "Today at {{ location }}, the weather is {{ current['weather_status'] }} with a temperature of{{ current['temperature'] }} degrees"
+#  - name: "get-the-weather-2"
+#    signals:
+#      - order: "what is the weather"
+#      - order: "what's the weather"
+#        matching-type: "strict"
+#    neurons:
+#      - openweathermap:
+#          api_key: "{{ wmapAPI }}"
+#          lang: "{{ lang }}"
+#          temp_unit: "fahrenheit"
+#          location: "{{ location }}"
+#          say_template:
+#          - "Today at {{ location }}, the weather is {{ current['weather_status'] }} with a temperature of{{ current['temperature'] }} degrees"
 
 
 #Forecast for tomorrow
   - name: "weather-forecast-daily"
     signals:
-      - order: "what's the forecast {{ day_of_week }}"
+      - order: "what's the weather {{ day_of_week }}"
+      - order: "what's the weather for {{ day_of_week }}"
       - order: "what's the forecast for {{ day_of_week }}"
+      - order: "what's the forecast {{ day_of_week }}"
     neurons:
       - openweathermap:
           api_key: "{{ wmapAPI }}"
