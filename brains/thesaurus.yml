@@ -2,9 +2,8 @@
   - name: "thesaurus"
     signals:
       - order: "what does {{ word }} mean"
-      - api_key: "{{ api_key }}"
     neurons:
       - uri:
-          url: 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/+{{ word }}+?key=+{{ api_key }}'
+          url: "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/+{{ word }}+?key=+{{ dict_key }}"
           say_template:
             - "{{ word }} means {{ shortdef }}"
