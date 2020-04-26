@@ -1,10 +1,10 @@
 ---
   - name: "thesaurus"
     signals:
-        - order: "what's another word for {{ word }}"
+        - order: "what does {{ word }} mean"
         - api_key: "{{ api_key }}"
     neurons:
-        - thesaurus:
-            word: "{{ word }}"
-        - say:
-            - "Another word for {{ word }} is {{ Synonyms }}"
+         - uri:
+          url: 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/+{{ word }}+?key=+{{ api_key }}'
+          say_template:
+            - "{{ word }} means {{ shortdef }}"
