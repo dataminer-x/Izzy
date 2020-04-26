@@ -5,5 +5,4 @@
     neurons:
       - uri:
           url: "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/{{ word }}?key={{ dict_key }}"
-          say_template:
-            - "{{ content.meta }}"
+          file_template: "/templates/thesaurus.j2"
