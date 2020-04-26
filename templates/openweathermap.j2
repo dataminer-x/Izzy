@@ -12,7 +12,7 @@
 -%}
 
 {% if "today" == day_of_week  %} 
-    This morning's weather will be {{ today['07:00']['weather_status'] }} with temperatures from about {{ today['07:00']['temperature'] }} to {{ today['19:00']['temperature'] }} degree this afternoon
+    This morning's weather will be {{ current['08:00']['weather_status'] }} with temperatures from about {{ current['08:00']['temperature'] }} to {{ current['20:00']['temperature'] }} degree this afternoon
 
 {% elif "tomorrow" == day_of_week  %} 
     Tomorrow morning's weather will be {{ tomorrow['07:00']['weather_status'] }} with temperatures from about {{ tomorrow['07:00']['temperature'] }} to {{ tomorrow['19:00']['temperature'] }} degree in the afternoon
