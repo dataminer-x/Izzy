@@ -1,0 +1,9 @@
+{% if wolfram_answer %}
+   {{ wolfram_answer }}
+{% elif google_answer %}
+    {{ google_answer }}
+{% elif duckduckgo_answer %}
+    {{ duckduckgo_answer }}
+{% elif NoAnswerFound %}
+    I'm Sorry I have no Answer to the question {{ NoAnswerFound }}
+{% endif %}

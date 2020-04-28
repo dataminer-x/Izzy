@@ -1,0 +1,13 @@
+  - name: "answer-of-everything"
+    signals:
+      - order: "tell me {{ query }}"
+    neurons:
+      - answer_of_everything:
+          question: "{{ query }}"
+          language: "en"
+          engines:
+                wolfram_alpha:
+                    key: "{{ alphaAPI }}"
+                google:
+                duckduckgo:
+          file_template: "templates/answer_of_everything.j2"
