@@ -24,7 +24,7 @@ triggers:
   - porcupine:
       keywords:
         - keyword:
-            ppn_file: "trigger/porcupine/porcupine_raspberrypi.ppn"
+            ppn_file: "trigger/porcupine/hey_izzy_linux_2020-05-31_v1.7.0.ppn"
 # ---------------------------
 # Speech to text
 # ---------------------------
