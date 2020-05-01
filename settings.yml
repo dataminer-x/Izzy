@@ -8,16 +8,23 @@
 # Trigger
 # ---------------------------
 # This is the trigger that will catch your magic work to wake up Kalliope
-default_trigger: "snowboy"
-
+#default_trigger: "snowboy"
+default_trigger: "porcupine"
 # Trigger engine configuration
 # Available engine are:
 # - snowboy
-triggers:
-  - snowboy:
-      #pmdl_file: "trigger/kalliope-EN-12samples.pmdl"
-       pmdl_file: "trigger/Izzy.pmdl" 
+#triggers:
+#  - snowboy:
+#      #pmdl_file: "trigger/kalliope-EN-12samples.pmdl"
+#       pmdl_file: "trigger/Izzy.pmdl"
 
+
+# Trigger engine configuration
+triggers:
+  - porcupine:
+      keywords:
+        - keyword:
+            ppn_file: "trigger/porcupine/porcupine_raspberrypi.ppn"
 # ---------------------------
 # Speech to text
 # ---------------------------
