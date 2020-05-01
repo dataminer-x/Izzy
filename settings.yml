@@ -123,7 +123,7 @@ resource_directory:
   stt: "resources/stt"
   tts: "resources/tts"
   signal: "resources/signal"
-#  trigger: "resources/trigger"
+  trigger: "resources/trigger"
 #
 
 # ---------------------------
